@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Uchen', serif;
+}
+.nav-content{
+    background:black;
+}
+/* navbar  */
+#navbar{
+    background-color:black;
+    font-weight: bold;
+    padding-left: 60px;
+}
+#logo{
+font-size: 25px;
+color: whitesmoke;
+}
+#logo img{
+    margin-bottom: 15px;
+}    
+.navbar-nav{
+    margin-left: 10px;
+}
+.nav-link{
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    margin-left: 15px;
+    transition: 0.5s ease;
+}
+.nav-link:hover{
+    background-color:grey;
+    color: black;
+    border-radius: 5px;
+}    
+@media screen and (max-width:330px) {
+    #logo{
+        font-size: 15px;
+    } 
+}
+/* navbar end */
+/* home section */
+.home{
+    width: 100%;
+    height:88.5vh;
+    display: flex;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+}
+.home.img{
+    flex: 1 1 400px;
+}
+.home.img img{
+    width:100%;
+}
+.home.content{
+    flex:1 1 400px;
+    margin-left: 60px;
+}
+.content h3{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+.content h2{
+    font-size: 30px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+.changecontent::after{
+    content: '';
+    color:aqua;
+    animation: changetext 10s infinite linear;
+    font-weight: bold;
+}
+@keyframes changetext{
+    0%{content:"Pistachios";}
+    20%{content:"Cashews";}
+    50%{content:"Walnuts";}
+    100%{content:"Almonds";}
+}
+.content p{
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    
+}
+.content .btn{
+    width: 110px;
+    height: 38px;
+    background-color:rgb(60, 29, 29);
+    color: white;
+}
+@media screen and (max-width:800px){
+    .content h3{
+        font-size: 45px;
+    }
+}
+@media screen and (max-width:860px){
+    .home{
+       height:120vh;
+    }
+}
+@media screen and (max-width:560px){
+    .home{
+       height:100vh;
+    }
+}
+@media screen and (max-width:330px){
+    .content h2{
+     font-size:20px;
+    }
+    .content h3{
+      font-size: 20px;
+    }
+}
+/* home section end */
+
+/* top card */
+#box{
+    margin-top: 50px;
+}
+#box .card{
+    box-shadow: 0px 0px 5px black;
+    margin-top: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#box .card:hover{
+    transform: translateY(-10px);
+}
+/* top card end */
+
+/* banner */
+.banner{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 10px black;
+}
+.banner img{
+    float: 1 1 400px;
+}
+.banner img img{
+    width: 100%;
+}
+.banner .content{
+    flex:1 1 400px;
+    margin-left: 60px;
+    margin-top: 60px;
+}
+.banner .content h3{
+    color: whitesmoke;
+    font-weight: bold;
+}
+.banner .content h2{
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+.banner .content p{
+    color:whitesmoke ;
+}
+#btnorder button{
+    width: 150px;
+    height: 32px;
+    background-color:rgb(60, 29, 29);
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+@media screen and (max-width:800px) {
+    .banner .content h3{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:855px) {
+    .banner{
+        height: 100vh;    }
+}
+/* banner end */
+
+/* product cards */
+#product-cards h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid rgb(95, 82, 82);
+}
+#product-cards .cards{
+    background-color:black;
+    box-shadow: 0 0 3px black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#product-cards h3{
+    color: rgb(243, 158, 158);
+    text-shadow: 1px 1px 1px black;
+}
+.star .checked{
+    color:rgb(224, 112, 21);
+}
+#product-cards p{
+    color: black;
+    font-weight: bold;
+}
+#product-cards h6{
+    font-size: 20px;
+    color:black;
+    font-weight: bold;
+}
+#product-cards h6 span button{
+   width: 100px;
+   height: 26px;
+   font-size: 15px;
+   background: transparent;
+   letter-spacing: 3px;
+   border: 2px solid #573818;
+   border-radius: 5px;
+   font-weight: bold;
+   transition: 0.5s ease;
+   cursor: pointer;
+}
+#product-cards h6 span button:hover{
+    background-color:darkred;
+    color: white;
+}
+/* product cards end */
+
+/* footer */
+#footer{
+    width:100%;
+    background-color: black;
+    box-shadow: 0px 0px 5px black;
+    margin-top: 100px;
+}
+#footer h1{
+    color:white;
+    padding-top: 30px;
+}#footer p{
+    color: white;
+}
+.icons i{
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    padding: 6px;
+    font-size: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.icons i:hover{
+    background-color:red;
+}
+.copyright{
+    color: white;
+}
+span{
+    color: white;
+}
