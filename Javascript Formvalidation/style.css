@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&family=Uchen&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color:#182C61;    
+    display: grid;
+    place-items: center;
+}
+
+.container{
+    background-color:#ced6e0;
+    width: 435px;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px rgb(205, 201, 201),inset -8px -8px 10px rgb(205, 201, 201),-8px -8px 10px gray, 8px 8px 10px gray;
+    transform: rotate(6.6deg);
+    position: relative;
+    
+
+}
+.container1{
+    background-color:#ced6e0;
+    width: 400px;
+    padding: 10px;
+    top:47px;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px rgb(205, 201, 201),inset -8px -8px 10px rgb(205, 201, 201),-8px -8px 10px gray, 8px 8px 10px gray;
+    position: absolute;
+    
+}
+.container1  h2{
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.form{
+    padding: 30px 40px;
+}
+.form-group{
+    color:#34495e;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+}
+.form-group label{
+    display: block;
+    margin-bottom: 5px;
+    color: black;
+    font-weight: 500;
+}
+.form-group input{
+    border: 2px solid #aaa;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    outline: none;
+    border-radius: 10px;
+}
+.form-group p{
+    font-size: 11px;
+    margin-top: 5px;
+    visibility: hidden;
+}
+.form button{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #3B3B98;
+    color: white;
+    background-color:#3B3B98;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 20px;
+}
+.form-group.error p{
+    color: #ff6b81;
+    visibility:visible;
+}
+.form-group.error input{
+   border-color: #ff6b81;
+}
+.form-group.success input{
+    border-color:blue;
+}
